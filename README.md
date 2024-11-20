@@ -90,6 +90,8 @@ Unfortunately, I cannot provide screenshots directly, but you can capture the fo
 1. **Homepage with Product List:**
    - Show the main page where products are displayed in horizontal cards.
    - Capture the hover effect where the product image scales up when the user hovers over it.
+   - ![image](https://github.com/user-attachments/assets/be9d98fc-e16a-4232-8e6a-d1fb9f61c405)
+
 
 2. **Product Details Page:**
    - Capture the product detail page after clicking on a product, showing detailed information like name, price, description, etc.
