@@ -43,6 +43,14 @@
     "image": "https://img.freepik.com/free-photo/brown-leather-shoes_74190-2610.jpg?ga=GA1.2.396349850.1726592308&semt=ais_hybrid",
     "description": "Stay connected on the go with this shoes."
   }
-  
+  ,
+  {
+    "id": 6,
+    "name": "Shoes",
+    "category": "Clothing",
+    "price": 10.99,
+    "image": "https://img.freepik.com/free-photo/brown-leather-shoes_74190-2610.jpg?ga=GA1.2.396349850.1726592308&semt=ais_hybrid",
+    "description": "Stay connected on the go with this shoes."
+  }
 ]
 
