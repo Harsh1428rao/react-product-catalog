@@ -6,7 +6,7 @@ const CategoryFilter = ({ categories, selectedCategory, setSelectedCategory }) =
       <select
         value={selectedCategory}
         onChange={(e) => setSelectedCategory(e.target.value)}
-        className="w-full py-2 px-4 border rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full py-4 px-4 border rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500"
       >
         <option value="">All Categories</option>
         {categories.map((category, index) => (
