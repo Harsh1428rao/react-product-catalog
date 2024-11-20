@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+The **Product Catalog** is an interactive online platform displaying various products with features like search, filtering, and hover effects. Users can view detailed product information and explore categories in a responsive layout. The catalog offers a seamless browsing experience across devices.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Instructions for Installing and Running the Application Locally
 
-## Available Scripts
+Follow these steps to set up and run the project locally:
 
-In the project directory, you can run:
+#### **1. Clone the repository**
+- First, clone the GitHub repository to your local machine:
+  ```bash
+  git clone https://github.com/Harsh1428rao/react-product-catalog
+  ```
+  Replace `yourusername` and `your-repository-name` with your GitHub username and the repository name.
 
-### `npm start`
+#### **2. Install Dependencies**
+- Navigate to the project folder:
+  ```bash
+  cd react-product-catalog
+  ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- If you're using **npm**, install the required dependencies:
+  ```bash
+  npm install
+  ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  Or, if you're using **Yarn**:
+  ```bash
+  yarn install
+  ```
 
-### `npm test`
+#### **3. Run the Application**
+- After installing the dependencies, you can run the development server:
+  ```bash
+  npm start
+  ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  Or, if you're using **Yarn**:
+  ```bash
+  yarn start
+  ```
 
-### `npm run build`
+- The app should now be running locally. Open your browser and navigate to `http://localhost:3000` (or the port specified by the terminal).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Additional Libraries and Tools Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React**: JavaScript library for building user interfaces.
+- **React Router**: For routing within the application.
+- **Tailwind CSS**: For utility-first CSS styling.
+- **React Icons**: For adding vector icons to the application.
+- **React Hooks**: `useState`, `useEffect` for managing component states and side effects.
+- **JSON Server** (optional): Used to mock an API for fetching products data, if applicable.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You can install any missing libraries by running:
+```bash
+npm install react-router-dom tailwindcss react-icons
+```
 
-### `npm run eject`
+### Challenges Faced and How They Were Overcome
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Aligning Product Cards Horizontally:**
+   - **Challenge**: Initially, the product cards were appearing vertically instead of horizontally.
+   - **Solution**: I implemented a `flex` layout with `overflow-x-auto` and adjusted the card sizes. Tailwind CSS utilities such as `max-w-xs`, `hover:scale-105`, and `space-x-6` were used to create responsive horizontal cards with hover effects.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Making Images Interactive on Hover:**
+   - **Challenge**: I needed to ensure that when the user hovered over the image, it should scale and move forward, giving a 3D-like effect.
+   - **Solution**: I used Tailwind's transition utilities (`transition-all`, `transform`, `hover:scale-110`) to achieve the hover effect.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Routing for Product Details Page:**
+   - **Challenge**: Proper routing was required for product details, which needed to dynamically display information based on the clicked product.
+   - **Solution**: I used `react-router-dom` to create dynamic routes and pass product details through the route parameters.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Optional Enhancements Implemented
 
-## Learn More
+1. **Search and Filter Functionality:**
+   - Implemented a search bar to filter products by name.
+   - Added a category filter so users can narrow down products by category.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Hover Animations:**
+   - Enhanced the product card UI with hover animations using Tailwind's `hover:scale-105` and `hover:shadow-2xl` to provide an interactive experience.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Responsive Layout:**
+   - Ensured the product list is responsive, adapting to different screen sizes by using Tailwind’s grid and flex utilities (`grid-cols-1 sm:grid-cols-2 lg:grid-cols-4`).
 
-### Code Splitting
+4. **Cart Feature (Optional Enhancement):**
+   - Added a cart feature to allow users to add products to their cart and view the total number of items in the cart.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Screenshots of the Application
 
-### Analyzing the Bundle Size
+Unfortunately, I cannot provide screenshots directly, but you can capture the following screens on your local setup:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. **Homepage with Product List:**
+   - Show the main page where products are displayed in horizontal cards.
+   - Capture the hover effect where the product image scales up when the user hovers over it.
+   - ![image](https://github.com/user-attachments/assets/be9d98fc-e16a-4232-8e6a-d1fb9f61c405)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. **Product Details Page:**
+   - Capture the product detail page after clicking on a product, showing detailed information like name, price, description, etc.
 
-### Advanced Configuration
+3. **Search and Filter:**
+   - Show how the user can search for products or filter them by category.
+![image](https://github.com/user-attachments/assets/0c86e117-8c8d-4fe6-a22a-53e4b059a19d)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+4. **Cart Feature (if implemented):**
+   - Capture the cart icon with a number indicating the number of items added to the cart.
 
-### Deployment
+By following these instructions, you should be able to run and enhance your project locally, while also having a robust user interface with interactive features.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
