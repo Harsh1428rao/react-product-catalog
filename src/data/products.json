@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "name": "Smart Phone",
+    "category": "Electronics",
+    "price": 99.99,
+    "image": "https://img.freepik.com/free-photo/creative-reels-composition_23-2149711507.jpg?ga=GA1.2.396349850.1726592308&semt=ais_hybrid",
+    "description": "High-quality wireless headphones with noise cancellation."
+  },
+  {
+    "id": 2,
+    "name": "Smart Watch",
+    "category": "Electronics",
+    "price": 10.99,
+    "image": "https://img.freepik.com/premium-photo/new-smart-fitness-bracelet-with-blank-black-screen_298425-984.jpg?ga=GA1.2.396349850.1726592308&semt=ais_hybrid",
+    "description": "Stay connected on the go with this stylish smart watch."
+  }
+  ,
+  {
+    "id": 3,
+    "name": "TV ",
+    "category": "Electronics",
+    "price": 20.99,
+    "image": "https://img.freepik.com/free-photo/room-interior-design_23-2148899490.jpg?ga=GA1.2.396349850.1726592308&semt=ais_hybrid",
+    "description": "Stay connected on the go with this stylish smart watch."
+  }
+  ,
+  {
+    "id": 4,
+    "name": "Bread",
+    "category": "Food",
+    "price": 8.99,
+    "image": "https://img.freepik.com/free-photo/side-view-breads-as-sliced-seeded-brown-cob-rye-white-ones-bowl-cutting-board-wooden-background_141793-27330.jpg?ga=GA1.2.396349850.1726592308&semt=ais_hybrid",
+    "description": "Stay connected on the go with this Food."
+  }
+  
+  ,
+  {
+    "id": 6,
+    "name": "Shoes",
+    "category": "Clothing",
+    "price": 10.99,
+    "image": "https://img.freepik.com/free-photo/brown-leather-shoes_74190-2610.jpg?ga=GA1.2.396349850.1726592308&semt=ais_hybrid",
+    "description": "Stay connected on the go with this shoes."
+  }
+  
+]
+
