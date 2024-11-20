@@ -1,3 +1,5 @@
+The **Product Catalog** is an interactive online platform displaying various products with features like search, filtering, and hover effects. Users can view detailed product information and explore categories in a responsive layout. The catalog offers a seamless browsing experience across devices.
+
 ### Instructions for Installing and Running the Application Locally
 
 Follow these steps to set up and run the project locally:
