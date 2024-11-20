@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+Instructions for Installing and Running the Application Locally
+Follow these steps to set up and run the project locally:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Clone the repository
+First, clone the GitHub repository to your local machine:
+bash
+Copy code
+git clone https://github.com/yourusername/your-repository-name.git
+Replace yourusername and your-repository-name with your GitHub username and the repository name.
+2. Install Dependencies
+Navigate to the project folder:
 
-## Available Scripts
+bash
+Copy code
+cd your-repository-name
+If you're using npm, install the required dependencies:
 
-In the project directory, you can run:
+bash
+Copy code
+npm install
+Or, if you're using Yarn:
 
-### `npm start`
+bash
+Copy code
+yarn install
+3. Run the Application
+After installing the dependencies, you can run the development server:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy code
+npm start
+Or, if you're using Yarn:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+Copy code
+yarn start
+The app should now be running locally. Open your browser and navigate to http://localhost:3000 (or the port specified by the terminal).
 
-### `npm test`
+Additional Libraries and Tools Used
+React: JavaScript library for building user interfaces.
+React Router: For routing within the application.
+Tailwind CSS: For utility-first CSS styling.
+React Icons: For adding vector icons to the application.
+React Hooks: useState, useEffect for managing component states and side effects.
+JSON Server (optional): Used to mock an API for fetching products data, if applicable.
+You can install any missing libraries by running:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+bash
+Copy code
+npm install react-router-dom tailwindcss react-icons
+Challenges Faced and How They Were Overcome
+Aligning Product Cards Horizontally:
 
-### `npm run build`
+Challenge: Initially, the product cards were appearing vertically instead of horizontally.
+Solution: I implemented a flex layout with overflow-x-auto and adjusted the card sizes. Tailwind CSS utilities such as max-w-xs, hover:scale-105, and space-x-6 were used to create responsive horizontal cards with hover effects.
+Making Images Interactive on Hover:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Challenge: I needed to ensure that when the user hovered over the image, it should scale and move forward, giving a 3D-like effect.
+Solution: I used Tailwind's transition utilities (transition-all, transform, hover:scale-110) to achieve the hover effect.
+Routing for Product Details Page:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Challenge: Proper routing was required for product details, which needed to dynamically display information based on the clicked product.
+Solution: I used react-router-dom to create dynamic routes and pass product details through the route parameters.
+Optional Enhancements Implemented
+Search and Filter Functionality:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Implemented a search bar to filter products by name.
+Added a category filter so users can narrow down products by category.
+Hover Animations:
 
-### `npm run eject`
+Enhanced the product card UI with hover animations using Tailwind's hover:scale-105 and hover:shadow-2xl to provide an interactive experience.
+Responsive Layout:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Ensured the product list is responsive, adapting to different screen sizes by using Tailwind’s grid and flex utilities (grid-cols-1 sm:grid-cols-2 lg:grid-cols-4).
+Cart Feature (Optional Enhancement):
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Added a cart feature to allow users to add products to their cart and view the total number of items in the cart.
+Screenshots of the Application
+Unfortunately, I cannot provide screenshots directly, but you can capture the following screens on your local setup:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Homepage with Product List:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Show the main page where products are displayed in horizontal cards.
+Capture the hover effect where the product image scales up when the user hovers over it.
+Product Details Page:
 
-## Learn More
+Capture the product detail page after clicking on a product, showing detailed information like name, price, description, etc.
+Search and Filter:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Show how the user can search for products or filter them by category.
+Cart Feature (if implemented):
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Capture the cart icon with a number indicating the number of items added to the cart.
