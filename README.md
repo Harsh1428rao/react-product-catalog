@@ -96,8 +96,10 @@ Unfortunately, I cannot provide screenshots directly, but you can capture the fo
 
 3. **Search and Filter:**
    - Show how the user can search for products or filter them by category.
+![image](https://github.com/user-attachments/assets/0c86e117-8c8d-4fe6-a22a-53e4b059a19d)
 
 4. **Cart Feature (if implemented):**
    - Capture the cart icon with a number indicating the number of items added to the cart.
 
 By following these instructions, you should be able to run and enhance your project locally, while also having a robust user interface with interactive features.
+
