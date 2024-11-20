@@ -7,14 +7,14 @@ Follow these steps to set up and run the project locally:
 #### **1. Clone the repository**
 - First, clone the GitHub repository to your local machine:
   ```bash
-  git clone https://github.com/yourusername/your-repository-name.git
+  git clone https://github.com/Harsh1428rao/react-product-catalog
   ```
   Replace `yourusername` and `your-repository-name` with your GitHub username and the repository name.
 
 #### **2. Install Dependencies**
 - Navigate to the project folder:
   ```bash
-  cd your-repository-name
+  cd react-product-catalog
   ```
 
 - If you're using **npm**, install the required dependencies:
